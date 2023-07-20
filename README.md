@@ -10,4 +10,4 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 ### Current environments:
 - [x] Cartpole (gym)
 - [x] Pendulum (gym)
-- [] Quadrotor (PyBullet)
+- [ ] Quadrotor (PyBullet)
