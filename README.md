@@ -6,13 +6,13 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 ###### without external disturbance  -  
 <p align="center">
 
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/d3423a33-e4c9-44ae-9b48-a432955305d8.gif" width="200" height="200">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/d3423a33-e4c9-44ae-9b48-a432955305d8.gif" width="300" height="200">
 </p>
 
 ###### with external disturbance  -  
 <p align="center">
 
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/0f8d7961-70f0-45c5-9640-71cb30740881.gif" width="200" height="200">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/0f8d7961-70f0-45c5-9640-71cb30740881.gif" width="300" height="200">
 </p>
 
 
@@ -29,7 +29,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
       
 <p align="center">
 
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/5b540218-bf16-4102-86a6-97186a7f60da.gif" width="200" height="200">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/5b540218-bf16-4102-86a6-97186a7f60da.gif" width="300" height="200">
 </p>
 
 
