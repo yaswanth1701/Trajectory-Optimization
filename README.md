@@ -3,11 +3,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 ### Algorithms  :
 - [X] Infinite horizon LQR:
 
-###### without external disturbance  -  
-<p align="center">
 
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/d3423a33-e4c9-44ae-9b48-a432955305d8.gif" width="300" height="200">
-</p>
 
 ###### with external disturbance  -  
 <p align="center">
