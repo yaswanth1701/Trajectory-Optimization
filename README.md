@@ -21,7 +21,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 - [X] Iterative LQR :
 <p align="center">
 
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/3be5d0fe-c398-4398-9109-6f9766d525f9" width="300" height="200">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/3be5d0fe-c398-4398-9109-6f9766d525f9" width="200" height="200">
 </p>
 
 - [X] Ierative LQR (with line search) :
