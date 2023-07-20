@@ -19,7 +19,15 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 - [X] Finite horizon LQR
 
 - [X] Iterative LQR
-- [X] Ierative LQR (with line search).
+- [X] Ierative LQR (with line search) :
+
+      
+<p align="center">
+
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/5b540218-bf16-4102-86a6-97186a7f60da.gif" width="300" height="200">
+</p>
+
+
 - [ ] Augmeneted lagrangain iterative LQR (AL-iLQR)
 - [ ] Box DDP
 ### Current environments:
