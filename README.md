@@ -2,6 +2,12 @@
 This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,cartpole ,quadrotors and manipulators). Will  be implementing algorithms like finite horizon LQR, iLQR , AL-ilQR,Box DDP and DIRCOL
 ### Algorithms  :
 - [X] Infinite horizon LQR
+<p align="center">
+
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/d3423a33-e4c9-44ae-9b48-a432955305d8.gif" width="300" height="200">
+</p>
+
+    
 - [X] Finite horizon LQR 
 - [X] Iterative LQR
 - [X] Iterative LQR (with line search).
