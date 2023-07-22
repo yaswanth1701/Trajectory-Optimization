@@ -40,4 +40,5 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
   https://www.notion.so/Trajectory-Optimisation-DDP-iLQR-7b680055afff496ba324bc03827f32e3?pvs=4
 - Advanced robotics by Pieter Abbeel (iLQR): https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/
 - Optimal control (CMU AL-ilqr): https://youtu.be/qGoGGSpg9Fs
-- Underactuated robotics (for non linear dynamics)
+- Underactuated robotics (For non linear dynamics):
+- Control-Limited Differential Dynamic Programming (Box DDP): https://homes.cs.washington.edu/~todorov/papers/TassaICRA14.pdf
