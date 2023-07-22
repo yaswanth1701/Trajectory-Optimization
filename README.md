@@ -1,5 +1,5 @@
 # Trajectory-Optimization
-This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,cartpole ,quadrotors and manipulators). Will  be implementing algorithms like finite horizon LQR, iLQR , AL-ilQR,Box DDP and DIRCOL
+This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,cartpole ,quadrotors and manipulators). Will  be implementing algorithms like finite horizon LQR, iLQR , AL-ilQR,Box DDP and DIRCOL.
 ### Algorithms  :
 - [X] Infinite horizon LQR:
 
@@ -35,3 +35,6 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 - [x] Cartpole (gym)
 - [x] Pendulum (gym)
 - [ ] Quadrotor (PyBullet)
+### References:
+- notes (includes detailed explaination of each algo and plot which are not included here)
+  https://www.notion.so/Trajectory-Optimisation-DDP-iLQR-7b680055afff496ba324bc03827f32e3?pvs=4
