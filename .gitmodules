@@ -1,0 +1,3 @@
+[submodule "2Dquadcopter/gym-pybullet-drone"]
+	path = 2Dquadcopter/gym-pybullet-drone
+	url = https://github.com/yaswanth1701/Trajectory-Optimization.git
