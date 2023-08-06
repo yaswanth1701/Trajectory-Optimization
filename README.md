@@ -33,7 +33,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/077646e7-c350-4c13-a693-e9e871f48013" width=400" height="200">
 </p>
 
-![ezgif-4-5f085f9c37]()
+
 
 
 - [ ] Augmeneted lagrangain iterative LQR (AL-iLQR)
