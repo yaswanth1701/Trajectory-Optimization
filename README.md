@@ -12,7 +12,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 </p>
 
 
-- [X] Finite horizon LQR
+
 
 - [X] Iterative LQR :
 <p align="center">
