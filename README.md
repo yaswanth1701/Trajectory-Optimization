@@ -30,9 +30,10 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 
 - [X] Ierative LQR (with LQR for trajectory tracking) :
 <p align="center">
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/b6a9afe1-ca93-448a-af95-16e1bc95ceb3" width="400" height="250">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/077646e7-c350-4c13-a693-e9e871f48013" width=400" height="200">
 </p>
 
+![ezgif-4-5f085f9c37]()
 
 
 - [ ] Augmeneted lagrangain iterative LQR (AL-iLQR)
