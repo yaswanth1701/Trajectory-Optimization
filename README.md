@@ -29,8 +29,9 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 </p>
 
 - [X] Ierative LQR (with finite-horizon LQR for trajectory tracking) :
-<p align="center">
-<img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/077646e7-c350-4c13-a693-e9e871f48013" width=400" height="200">
+
+
+https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/e0659d9a-195d-4474-9f8c-f8a8e953ef8d
 </p>
 
 
