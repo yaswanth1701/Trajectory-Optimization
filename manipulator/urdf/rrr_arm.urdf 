@@ -107,4 +107,25 @@
     </inertial>
   </link>
 
+  <joint name="ee_fixed_joint" type="fixed">
+    <parent link="forearm_link"/>
+    <child link="ee_link"/>
+    <origin rpy="0.0 0.0 1.57079632679" xyz="0.0 0.0 0.4"/>
+  </joint>
+  <link name="ee_link">
+    <collision>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz=" 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0"/>
+      <inertia ixx="0.049443313556" ixy="0.0" ixz="0.0" iyy="0.049443313556" iyz="0.0" izz="0.004095"/>
+    </inertial>
+  </link>
+
+  
+
 </robot>
