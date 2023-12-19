@@ -37,7 +37,12 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/61f5d702-7077-464f-b5cc-54334013f191.gif" width="600" height="300">
 </p>
 
-- [ ] Box DDP
+- [X] MPC using DIRCOL :
+
+<p align="center">
+<img src="https://github.com/yaswanth1701/Trajectory-Optimization-DDP-iLQR/assets/92177410/8bb4e595-98e5-479a-8be5-65e9feabe37f" width="600" height="300">
+</p>
+
 ### Current environments:
 - [x] Cartpole (gym)
 - [x] Pendulum (gym)
