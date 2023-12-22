@@ -42,6 +42,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 <p align="center">
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization-DDP-iLQR/assets/92177410/8bb4e595-98e5-479a-8be5-65e9feabe37f" width="600" height="300">
 </p>
+
 for code refer [here](https://github.com/yaswanth1701/MPC-for-Mobile-Robot).
 
 ### Current environments:
