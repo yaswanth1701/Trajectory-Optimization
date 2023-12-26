@@ -5,7 +5,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 
 
 
-###### with external disturbance(0-50N)  -  
+###### with external disturbance(0-50N)  -
 <p align="center">
 
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/0f8d7961-70f0-45c5-9640-71cb30740881.gif" width="300" height="200">
