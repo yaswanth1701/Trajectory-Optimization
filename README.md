@@ -50,6 +50,7 @@ for code refer [here](https://github.com/yaswanth1701/MPC-for-Mobile-Robot).
 - [x] Pendulum (gym)
 - [x] Quadrotor (PyBullet)
 - [x] Turtlebot3 (gazebo)
+- [ ] 5 link Biped (matplotlib)
 ### References:
 - [Notes](https://www.notion.so/Trajectory-Optimisation-DDP-iLQR-7b680055afff496ba324bc03827f32e3?pvs=4)
 - [Advanced robotics by Pieter Abbeel (iLQR)](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/)
