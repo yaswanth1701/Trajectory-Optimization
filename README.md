@@ -5,7 +5,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 
 
 
-###### with external disturbance(0-50N)  -  
+###### with external disturbance(0-50N)  -
 <p align="center">
 
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/0f8d7961-70f0-45c5-9640-71cb30740881.gif" width="300" height="200">
@@ -50,6 +50,7 @@ for code refer [here](https://github.com/yaswanth1701/MPC-for-Mobile-Robot).
 - [x] Pendulum (gym)
 - [x] Quadrotor (PyBullet)
 - [x] Turtlebot3 (gazebo)
+- [ ] 5 link Biped (matplotlib)
 ### References:
 - [Notes](https://www.notion.so/Trajectory-Optimisation-DDP-iLQR-7b680055afff496ba324bc03827f32e3?pvs=4)
 - [Advanced robotics by Pieter Abbeel (iLQR)](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/)
