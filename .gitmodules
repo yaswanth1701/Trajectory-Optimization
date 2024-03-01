@@ -1,3 +1,9 @@
 [submodule "2Dquadcopter/gym-pybullet-drone"]
 	path = 2Dquadcopter/gym-pybullet-drone
 	url = https://github.com/yaswanth1701/Trajectory-Optimization.git
+[submodule "manipulator/child"]
+	path = manipulator/child
+	url = https://github.com/zswang666/pybullet-playground.git
+[submodule "manipulator/pybullet_models"]
+	path = manipulator/pybullet_models
+	url = https://github.com/zswang666/pybullet-playground.git
