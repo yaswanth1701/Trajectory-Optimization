@@ -4,7 +4,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/visual/base.obj"/>
+        <mesh filename="../pybullet-models/meshes/ur5/visual/base.obj"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0 0 0 1.0"/>
@@ -12,7 +12,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="manipulator/pybullet-playground/meshes/ur5/collision/base.stl"/>
+        <mesh filename="../pybullet-models/meshes/ur5/collision/base.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -33,7 +33,7 @@
   <link name="shoulder_link">
     <visual>
       <geometry>
-        <mesh filename="manipulator/pybullet-playground/meshes/ur5/visual/shoulder.obj"/>
+        <mesh filename="../pybullet-models/meshes/ur5/visual/shoulder.obj"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0 0 0 1.0"/>
@@ -41,7 +41,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/collision/shoulder.stl"/>
+        <mesh filename="../pybullet-models/meshes/ur5/collision/shoulder.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -61,7 +61,7 @@
   <link name="upper_arm_link">
     <visual>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/visual/upperarm.obj"/>
+        <mesh filename="../pybullet-models/meshes/ur5/visual/upperarm.obj"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -69,7 +69,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/collision/upperarm.stl"/>
+        <mesh filename="../pybullet-models/meshes/ur5/collision/upperarm.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -89,7 +89,7 @@
   <link name="forearm_link">
     <visual>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/visual/forearm.obj"/>
+        <mesh filename="../pybullet-models/meshes/ur5/visual/forearm.obj"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1.0"/>
@@ -97,7 +97,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="/home/yaswanth/optimal_control/manipulator/pybullet-playground/meshes/ur5/collision/forearm.stl"/>
+        <mesh filename="../pybullet-models/meshes/ur5/collision/forearm.stl"/>
       </geometry>
     </collision>
     <inertial>
