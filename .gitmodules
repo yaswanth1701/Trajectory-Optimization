@@ -1,3 +1,7 @@
 [submodule "manipulator/pybullet_models"]
 	path = manipulator/pybullet_models
 	url = https://github.com/zswang666/pybullet-playground.git
+[submodule "2Dquadcopter/gym-pybullet-drones"]
+	path = 2Dquadcopter/gym-pybullet-drones
+	url = https://github.com/utiasDSL/gym-pybullet-drones.git
+	branch = master
