@@ -37,7 +37,7 @@ This repo contains trajectory-optimisation  on some basic systems (ex: pendulum,
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/61f5d702-7077-464f-b5cc-54334013f191.gif" width="600" height="300">
 </p>
 
-- [x] Infinite LQR (wiht quaternion as state):
+- [x] Infinite LQR (with quaternion as state):
 
 <p align="center">
 <img src="https://github.com/yaswanth1701/Trajectory-Optimization/assets/92177410/b666bb0b-f342-4e29-a471-f6588ec39e86.gif" width="600" height="300">
