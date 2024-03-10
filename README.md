@@ -8,6 +8,9 @@ cd Trajectory-Optimization
 git submodule update --init --recursive
 ```
 - Make sure to run `gym-pybullet-drones` inside the conda environment (for details click [here](https://github.com/utiasDSL/gym-pybullet-drones/tree/51caae3210ade52de96f3cef9c9d4e5f331576d4#:~:text=%24%20conda%20create%20%2Dn%20drones%20python%3D3.8%0A%24%20conda%20activate%20drones%0A%24%20pip3%20install%20%2D%2Dupgrade%20pip%0A%24%20git%20clone%20https%3A//github.com/utiasDSL/gym%2Dpybullet%2Ddrones.git%0A%24%20cd%20gym%2Dpybullet%2Ddrones/%0A%24%20pip3%20install%20%2De%20.)).
+### Demo:
+  
+   [video](https://www.bilibili.com/video/BV1nK421t7Jg/?spm_id_from=333.999.0.0) (credits: [ppap36](https://github.com/ppap36))
 
 ### Algorithms  :
 - [X] Infinite horizon LQR:
