@@ -32,7 +32,7 @@ class Env():
         p.configureDebugVisualizer(p.COV_ENABLE_GUI, 1)
 
 
-        self.model_path = "/home/yaswanth/optimal_control/manipulator/urdf/rrr_arm.urdf "
+        self.model_path = "franka_panda/panda.urdf"
 
 
         # for loading the plane in environment 
@@ -69,8 +69,8 @@ class Env():
 
 
         # getting initial joint space positions
-        self.initial_joint_pos = np.array(p.calculateInverseKinematics(self.manipulator,self.number_of_joints-1 ,initial_position,maxNumIterations = 50))
-        self.desired_joint_pos = np.array(p.calculateInverseKinematics(self.manipulator,self.number_of_joints-1 ,desired_position,maxNumIterations = 50))
+        self.initial_joint_pos = np.array(p.calculateInverseKinematics(self.manipulator,11 ,initial_position,maxNumIterations = 50))
+        self.desired_joint_pos = np.array(p.calculateInverseKinematics(self.manipulator,11 ,desired_position,maxNumIterations = 50))
         
         
 
@@ -81,26 +81,26 @@ class Env():
 
         #  setting up initial joint position for the manipulator
     
-        for n in self.rev_joints_index:
+        for i,n in enumerate(self.rev_joints_index):
 
-
-            p.resetJointState(self.manipulator,n,self.initial_joint_pos[n - self.rev_joints_index[0]])
+            p.resetJointState(self.manipulator,n,self.initial_joint_pos[i])
+        
         
         # states for the manipulator (DOF) and action also 
          
-        self.states_space = 2*self.num_rev_joints
+        self.states_space = 18
 
-        self.actions_space = self.num_rev_joints
+        self.actions_space = 9
 
         # getting intial joint positions and velocities
         joint_states = p.getJointStates(self.manipulator,self.rev_joints_index)
 
 
-        print(f"\nThe Dimension Of The State Space Is : {self.states_space} And The Dimension Of The Action Space Is : {self.actions_space} \n")
+        #print(f"\nThe Dimension Of The State Space Is : {self.states_space} And The Dimension Of The Action Space Is : {self.actions_space} \n")
 
-        self.initial_vel = np.zeros(self.num_rev_joints)
+        self.initial_vel = np.zeros(9)
 
-        self.initial_acc = np.zeros(self.num_rev_joints)
+        self.initial_acc = np.zeros(9)
 
 
         print("Environment Is Ready !!!!! \n")
@@ -116,12 +116,12 @@ class Env():
 
         self.initial_torque, mass_matrix = self.get_dynamics(self.initial_joint_pos,self.initial_vel,self.initial_acc)
 
-        self.initial_acc = self.get_joint_acceleration(mass_matrix,self.initial_torque,self.initial_torque)
-        # initial_acc,self.initial_torque, mass_matrix = self.forward_dynamics(self.initial_joint_pos,self.initial_vel,self.initial_acc)
+        #self.initial_acc = self.get_joint_acceleration(mass_matrix,self.initial_torque,self.initial_torque)
+        #initial_acc,self.initial_torque, mass_matrix = self.forward_dynamics(self.initial_joint_pos,self.initial_vel,self.initial_acc)
 
         print("\nInitial configuration gravity compensation vector : \n {initial_torque} \n".format(initial_torque = self.initial_torque))
 
-        print("\nInitial configuration mass matrix is : \n {mass_matrix}  \n".format(mass_matrix=mass_matrix))
+        print("\nInitial configuration mass matrix is : \n {mass_matrix}  \n".format(mass_matrix=mass_matrix.shape))
 
         print("\nInitial joint accelerations are following : \n {initial_acc}  \n".format(initial_acc = self.initial_acc))
 
@@ -196,9 +196,11 @@ class Env():
 
 
         self.rev_joints_index = [n for n in range(self.number_of_joints) if p.getJointInfo(self.manipulator,n)[2] == 0]
-
+        self.rev_joints_index.append(9)
+        self.rev_joints_index.append(10)
 
         self.num_rev_joints = len(self.rev_joints_index)
+        
 
         print(f"\nIndex of revolute joints in the urdf {self.rev_joints_index} and number of revolute joints in urdf are {self.num_rev_joints}")
 
@@ -229,6 +231,7 @@ class Env():
         # if qddot is passed as zero then this returns the Coriolis, Centrifugal, Gravity torque terms.
 
         torque = np.array(p.calculateInverseDynamics(self.manipulator,pos_list,vel_list,acc_list))
+        
 
         # This is to get the joint space mass matrix 
 
@@ -291,12 +294,13 @@ class Env():
 
         if not TEST:
             
-
+            
             command = self.initial_torque
 
             while planning_horizon:
-
-                self.step_env(command,p.POSITION_CONTROL)
+                states = p.getJointStates(self.manipulator,self.rev_joints_index)
+                print(f"joint states are {states}")
+                self.step_env(command,p.TORQUE_CONTROL)
 
         
         else :
@@ -310,8 +314,14 @@ class Env():
                 optimal_state = optimal_states[n]
 
                 states = p.getJointStates(self.manipulator,self.rev_joints_index)
+                current_pos = []
+                current_vel = []
+                for state in states:
+                    current_pos.append(state[0])
+                    current_vel.append(state[1])
 
-                current_state = np.array([states[0][0],states[1][0],states[2][0],states[0][1],states[1][1],states[2][1]])
+
+                current_state = np.array([current_pos, current_vel]).ravel()
 
             
 
@@ -330,7 +340,7 @@ class Env():
 
 if __name__ == "__main__":
     
-    initial_pos = np.array([-0.2,0,0.5])
+    initial_pos = np.array([-0.7,0,0.5])
 
 
     test = Env(initial_pos,initial_pos)
