@@ -19,7 +19,7 @@ class Trajectory_Optimization(Env):
         self.desired_states = np.hstack((self.desired_joint_pos, self.desired_joint_vel))
         self.K = np.zeros((planning_horizon, 9, 18))
         self.k = np.zeros((planning_horizon, 9, 1))
-        self.Q = np.diag([800] * 9 + [200] )
+        self.Q = np.diag([800] * 9 + [200] * 9)
         self.R = np.diag([1] * 9)
         print("Getting initial trajectory states from initial guess of actions (Torques)\n")
         self.get_trajectory()
